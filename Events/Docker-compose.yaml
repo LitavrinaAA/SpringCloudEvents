@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "eventdb"
+      POSTGRES_USER: "event"
+      POSTGRES_PASSWORD: "event"
+    ports:
+      - "5434:5432"
